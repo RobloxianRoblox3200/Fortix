@@ -1,0 +1,121 @@
+-- Instances:
+
+local FortixGui = Instance.new("ScreenGui")
+local FortixPanel = Instance.new("Frame")
+local UICorner1 = Instance.new("UICorner")
+local FortixPanel2 = Instance.new("Frame")
+local UICorner2 = Instance.new("UICorner")
+local Espv1 = Instance.new("TextButton")
+local UICorner3 = Instance.new("UICorner")
+local Espv2 = Instance.new("TextButton")
+local UICorner4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local UICorner5 = Instance.new("UICorner")
+
+--Properties:
+
+FortixGui.Name = "FortixGui"
+FortixGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FortixGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FortixPanel.Name = "FortixPanel"
+FortixPanel.Parent = FortixGui
+FortixPanel.BackgroundColor3 = Color3.fromRGB(45, 45, 48)
+FortixPanel.Position = UDim2.new(0.127994001, 0, 0.107975461, 0)
+FortixPanel.Size = UDim2.new(0, 100, 0, 119)
+
+UICorner1.Name = "UICorner1"
+UICorner1.Parent = FortixPanel
+
+FortixPanel2.Name = "FortixPanel2"
+FortixPanel2.Parent = FortixPanel
+FortixPanel2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FortixPanel2.Position = UDim2.new(0, 0, 0.228683472, 0)
+FortixPanel2.Size = UDim2.new(0, 100, 0, 91)
+
+UICorner2.Name = "UICorner2"
+UICorner2.Parent = FortixPanel2
+
+Espv1.Name = "Esp v1"
+Espv1.Parent = FortixPanel2
+Espv1.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Espv1.Position = UDim2.new(0.0799999982, 0, 0.0500000007, 0)
+Espv1.Size = UDim2.new(0, 84, 0, 36)
+Espv1.Font = Enum.Font.SourceSans
+Espv1.Text = "Esp v1"
+Espv1.TextColor3 = Color3.fromRGB(256, 256, 256)
+Espv1.TextSize = 14.000
+
+UICorner3.Name = "UICorner3"
+UICorner3.Parent = Espv1
+
+Espv2.Name = "Esp v2"
+Espv2.Parent = FortixPanel2
+Espv2.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Espv2.Position = UDim2.new(0.0799999982, 0, 0.497999996, 0)
+Espv2.Size = UDim2.new(0, 84, 0, 36)
+Espv2.Font = Enum.Font.SourceSans
+Espv2.Text = "Esp v2"
+Espv2.TextColor3 = Color3.fromRGB(256, 256, 256)
+Espv2.TextSize = 14.000
+
+UICorner4.Name = "UICorner4"
+UICorner4.Parent = Espv2
+
+TextLabel.Parent = FortixPanel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.300000161, 0, 0.0399999991, 0)
+TextLabel.Size = UDim2.new(0, 40, 0, 16)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "ESP"
+TextLabel.TextColor3 = Color3.fromRGB(256, 256, 256)
+TextLabel.TextSize = 14.000
+
+Exit.Name = "Exit"
+Exit.Parent = FortixPanel
+Exit.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Exit.Position = UDim2.new(0.699999988, 1, 0, 1)
+Exit.Size = UDim2.new(0, 25, 0, 25)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(256, 256, 256)
+Exit.TextSize = 14.000
+
+UICorner5.Name = "UICorner5"
+UICorner5.Parent = Exit
+
+-- Scripts:
+
+local function YHVAFR_fake_script() -- FortixPanel.FortixPanelScript 
+	local script = Instance.new('LocalScript', FortixPanel)
+
+	FortixPanel.Active = true
+	FortixPanel.Draggable = true
+end
+coroutine.wrap(YHVAFR_fake_script)()
+local function TSRM_fake_script() -- Espv1.Esp1 
+	local script = Instance.new('LocalScript', Espv1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/Esp_v1.txt"))()
+	end)
+end
+coroutine.wrap(TSRM_fake_script)()
+local function EWZD_fake_script() -- Espv2.Esp2 
+	local script = Instance.new('LocalScript', Espv2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/Esp_v2.txt"))()
+	end)
+end
+coroutine.wrap(EWZD_fake_script)()
+local function CJZBH_fake_script() -- Exit.Exit 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		FortixGui:Destroy()
+	end)
+end
+coroutine.wrap(CJZBH_fake_script)()
