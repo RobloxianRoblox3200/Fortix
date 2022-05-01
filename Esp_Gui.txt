@@ -99,7 +99,7 @@ local function TSRM_fake_script() -- Espv1.Esp1
 	local script = Instance.new('LocalScript', Espv1)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/Esp_v1.txt"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Scripts_Roblox/main/Esp_v1.lua"))()
 	end)
 end
 coroutine.wrap(TSRM_fake_script)()
@@ -107,7 +107,7 @@ local function EWZD_fake_script() -- Espv2.Esp2
 	local script = Instance.new('LocalScript', Espv2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/Esp_v2.txt"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Scripts_Roblox/main/Esp_v2.lua"))()
 	end)
 end
 coroutine.wrap(EWZD_fake_script)()
