@@ -114,7 +114,7 @@ local function OYHUN_fake_script() -- TextButton2.LocalScript
 	local script = Instance.new('LocalScript', TextButton2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/Build%20A%20Boat%20v2.txt"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxianRoblox3200/Scripts_Roblox/main/Build_A_Boat_v2.lua"))()
 	end)
 end
 coroutine.wrap(OYHUN_fake_script)()
