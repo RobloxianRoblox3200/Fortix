@@ -7,7 +7,6 @@ end)
 local rs = "https://raw.githubusercontent.com/RobloxianRoblox3200/Fortix/main/"
 
 local games = {
-    [2961297129] = "Death_Zone.txt",
     [537413528] = "Build_A_Boat_GUI.txt",
     [8554378337] = "Weapon_Fighting_Simulator_Gui.lua" ,
 }
@@ -19,7 +18,7 @@ for i, v in pairs(games) do
 end
 
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
-    Text = "[Uzu Scripts]: Report bugs on my discord.",
+    Text = "[Robloxian]: Good luck not getting banned.",
     Color = Color3.new(0, 191, 255),
     TextSize = 18,
 })
